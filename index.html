@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gouru Foundation</title>
+  <style>
+    @font-face {
+      font-family: 'Neue Montreal';
+      src: url('fonts/NeueMontreal-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Neue Montreal';
+      src: url('fonts/NeueMontreal-Bold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }
+    body {
+      margin: 0;
+      font-family: 'Neue Montreal', sans-serif;
+      color: #fff;
+      background: #000;
+    }
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+    header .nav {
+      display: flex;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 10px 20px;
+      backdrop-filter: blur(8px);
+    }
+    header .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header .nav a:hover {
+      color: #ddd;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 8vw;
+      font-weight: bold;
+      line-height: 1.1;
+      margin: 0;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+    footer .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    footer .logo img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+    footer .sections {
+      display: flex;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+    footer .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    footer li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logos/gouru_logo_png.png" alt="Gouru logo">
+      <span>Gouru.Foundation</span>
+    </div>
+    <nav class="nav">
+      <a href="#">about us</a>
+      <a href="#">impact</a>
+      <a href="#">grant programs</a>
+    </nav>
+    <div></div>
+  </header>
+  <section class="hero">
+    <h1>
+      Funding<br>
+      High-Impact<br>
+      Solutions
+    </h1>
+  </section>
+  <footer>
+    <div class="logo">
+      <img src="logos/gouru_logo_png.png" alt="Gouru logo">
+      <span>Gouru.Foundation</span>
+    </div>
+    <div class="sections">
+      <div>
+        <div class="section-title">Section 1</div>
+        <ul>
+          <li>Option A</li>
+          <li>Option B</li>
+          <li>Option C</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-title">Section 2</div>
+        <ul>
+          <li>Option D</li>
+          <li>Option E</li>
+          <li>Option F</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-title">Section 3</div>
+        <ul>
+          <li>Option G</li>
+          <li>Option H</li>
+          <li>Option I</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
