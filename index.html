@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,5 +164,54 @@
       </div>
     </div>
   </footer>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gouru Foundation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #timer {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+  <script>
+    let countdown = 15;
+    function updateTimer() {
+      const timerEl = document.getElementById('timer');
+      if (timerEl) {
+        timerEl.textContent = `Redirecting in ${countdown} seconds...`;
+      }
+      if (countdown === 0) {
+        window.location.href = 'https://gouru.com';
+      } else {
+        countdown--;
+        setTimeout(updateTimer, 1000);
+      }
+    }
+    window.onload = updateTimer;
+  </script>
+</head>
+<body>
+  <h1>Website under construction.</h1>
+  <p>Please visit <a href="https://gouru.com">gouru.com</a>.</p>
+  <div id="timer"></div>
 </body>
 </html>
